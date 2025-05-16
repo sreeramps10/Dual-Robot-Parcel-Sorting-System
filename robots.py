@@ -7,7 +7,7 @@ class Robot:
     def __init__(self, id, home, colour=config.ROBOT_COLOUR, speed=config.ROBOT_SPEED): 
         self.id = id
         self.pos = home                           # (x,y)
-        self.state = 'idle'                       # idle, returning, delivering, picking up
+        self.state = 'idle'                       # idle, moving, returning, delivering, picking up
         self.task = None                          # (type, target_pos)
         self.path = []
         self.color = colour
